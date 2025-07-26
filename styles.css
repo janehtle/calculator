@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(19, 23, 59);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(math.png);
+}
+
+#calculator {
+    background-color: rgb(9, 22, 53);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 40px;
+    max-width: 500px;
+    overflow: hidden;
+    padding: 8px;
+    box-shadow:
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 21px #fff,
+    0 0 8px rgb(16, 34, 78),
+    0 0 22px rgb(16, 34, 78),
+    0 0 22px rgb(16, 34, 78),
+    0 0 22px rgb(16, 34, 78),
+    0 0 21px rgb(16, 34, 78);
+}
+
+.operator, #resetBtn {
+    background-color: red;
+    box-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 8px red,
+    0 0 12px red,
+    0 0 22px red,
+    0 0 12px red,
+    0 0 11px red;
+}
+
+#btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+input {
+    width: 450px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    font-size: 5rem;
+    text-align: right;
+    border: none;
+    background-color: rgba(25, 39, 73, 0.844);
+    color: white;
+    box-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 8px #13dffe,
+    0 0 22px #13dffe,
+    0 0 22px #13dffe,
+    0 0 22px #13dffe,
+    0 0 21px #13dffe;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #13dffe;
+    color: white;
+    box-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 5px #13dffe,
+    0 0 12px #13dffe,
+    0 0 12px #13dffe,
+    0 0 12px #13dffe,
+    0 0 21px #13dffe;
+    text-shadow:
+    0 0 21px #fff;
+}
+
+#resetBtn {
+    width: 450px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.operator:hover, #resetBtn:hover {
+    background-color: rgb(249, 134, 134);
+}
+
+button:hover {
+    background-color: #81e4f3;
+}
+
+/* ------ media query for mobile ------ */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    #calculator {
+        max-width: 400px;
+    }
+    
+    input {
+        width: 350px;
+    }
+
+    button {
+        width: 80px;
+        height: 80px;
+    }
+
+    #resetBtn {
+        width: 350px;
+    }
+
+    #calculator {
+        padding: 0;
+    }
+}
