@@ -2,7 +2,7 @@
 
 Functional web browser calculator that performs basic arithmetic calculations. It can add, subtract, divide, and multiply whole and floating integers. AC clears the display in the input bar (will need to be pressed after every calculation before writing a new one). Additionally, the user can type the operands and operators as well, instead of clicking on the screen all the time.
 
-[Live Demo](https://calculator-oh2eyfklw-jane-les-projects.vercel.app)
+[Live Demo](https://calculator-a8c7vk3na-jane-les-projects.vercel.app)
 
 # Design
 
